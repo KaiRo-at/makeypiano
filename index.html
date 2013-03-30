@@ -1,0 +1,77 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+   - You can obtain one at http://mozilla.org/MPL/2.0/.  -->
+
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- try to force a 1:1 scaling on mobile, see
+       https://developer.mozilla.org/en/Mobile/Viewport_meta_tag -->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
+  <title>MaKey MaKey Piano</title>
+  <script src="js/piano.js" type="application/javascript;version=1.8"></script>
+  <link rel="stylesheet" href="style/piano.css">
+  <link rel="shortcut icon" href="style/pianoIcon16.png" type="image/png">
+</head>
+<body id="body">
+<h1>MaKey MaKey Piano</h1>
+
+<table id="keyboard">
+<tr>
+<td class="key white upper" colspan="2" id="c1-upper"></td>
+<td class="key black" colspan="2"></td>
+<td class="key white upper small" colspan="1" id="d1-upper"></td>
+<td class="key black" colspan="2"></td>
+<td class="key white upper" colspan="2" id="e1-upper"></td>
+<td class="key white upper" colspan="2" id="f1-upper"></td>
+<td class="key black" colspan="2"></td>
+<td class="key white upper small" colspan="1" id="g1-upper"></td>
+<td class="key black" colspan="2"></td>
+<td class="key white upper small" colspan="1" id="a1-upper"></td>
+<td class="key black" colspan="2"></td>
+<td class="key white upper" colspan="2" id="b1-upper"></td>
+<td class="key white upper" colspan="2" id="c2-upper"></td>
+<td class="key black small" colspan="1"></td>
+</tr>
+<tr>
+<td class="key white lower" colspan="3" id="c1-lower"
+    onclick="gPitches.play('c1');">C</td>
+<td class="key white lower" colspan="3" id="d1-lower"
+    onclick="gPitches.play('d1');">D</td>
+<td class="key white lower" colspan="3" id="e1-lower"
+    onclick="gPitches.play('e1');">E</td>
+<td class="key white lower" colspan="3" id="f1-lower"
+    onclick="gPitches.play('f1');">F</td>
+<td class="key white lower" colspan="3" id="g1-lower"
+    onclick="gPitches.play('g1');">G</td>
+<td class="key white lower" colspan="3" id="a1-lower"
+    onclick="gPitches.play('a1');">A</td>
+<td class="key white lower" colspan="3" id="b1-lower"
+    onclick="gPitches.play('b1');">B</td>
+<td class="key white lower" colspan="3" id="c2-lower"
+    onclick="gPitches.play('c2');">C</td>
+</tr>
+</table>
+
+<button id="helptoggle" onclick="toggleHelp();">?</button>
+<div id="helpdesc">
+<p>Connect a <a href="http://makeymakey.com/">MaKey MaKey</a> to Bananas or
+whatever you like, keys will match C major pitches as follows:</p>
+
+<table id="helptable">
+<tr><th>Key</th><th>Pitch</th></tr>
+<tr><td>Space</td><td>C'</td></tr>
+<tr><td>Right</td><td>D'</td></tr>
+<tr><td>Up</td><td>E'</td></tr>
+<tr><td>Left</td><td>F'</td></tr>
+<tr><td>Down</td><td>G'</td></tr>
+<tr><td>W</td><td>A'</td></tr>
+<tr><td>A</td><td>B'</td></tr>
+<tr><td>S</td><td>C''</td></tr>
+</table>
+<div id="helphide"><button onclick="toggleHelp();">Hide Help</button></div>
+</div>
+
+</body>
+</html>

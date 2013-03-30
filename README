@@ -1,0 +1,14 @@
+This web app is mainly targeted at people playing with a MaKeyMaKey -
+see http://makeymakey.com/ - and maps certain keys to piano sounds.
+
+The keys space, left, up, right, down, w, a, s are mapped to C major pitches.
+
+
+This app is running on http://piano.kairo.at/
+
+
+The main repo is http://git-public.kairo.at/?p=makeypiano.git;a=summary but
+it's listed on GitHub at https://github.com/KaiRo-at/makeypiano for convenience
+for potential contributors. See the TODO for tasks that you can help with.
+
+Please don't use GitHub for issue tracking but http://bugzilla.kairo.at/

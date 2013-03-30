@@ -1,0 +1,21 @@
+CACHE MANIFEST
+
+# 2013-03-30
+manifest.webapp
+js/piano.js
+sound/piano_c1.opus
+sound/piano_d1.opus
+sound/piano_e1.opus
+sound/piano_f1.opus
+sound/piano_g1.opus
+sound/piano_a1.opus
+sound/piano_b1.opus
+sound/piano_c2.opus
+style/piano.css
+style/pianoIcon16.png
+style/pianoIcon32.png
+style/pianoIcon64.png
+style/pianoIcon128.png
+
+NETWORK:
+*
